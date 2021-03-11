@@ -1,9 +1,81 @@
 <html>
 	<head>
-		<title></title>	
+		<title>New Item Group</title>	
 	</head>
 	<body>
-	
+		<table width=50% height=50%>
+			<tr>
+				<td>Type</td>
+				<td>
+					<input type="radio" name="type" value="goods"/>Goods
+					<input type="radio" name="type" value="service"/>Service
+				</td>
+			</tr>
+			<tr>
+				<td>Item Group Name*</td>
+				<td>
+					<input type="text" name="imname"/>
+				</td>
+			</tr>
+			<tr>
+				<td>Description </td>
+				<td>
+					<textarea name="description"></textarea>
+					<br>
+					<input type="checkbox" name="dec" value="returnItem"/>Returnable Item
+				</td>
+			</tr>
+			<tr>
+				<td>Unit* </td>
+				<td>
+					<select>
+						<option hidden>Select or Type a Unit</option>
+						<option value="box">box</option>
+						<option value="centimeter">cm</option>
+						<option value="dz">dz</option>
+						<option value="fit">ft</option>
+						<option value="gram">g</option>
+						<option value="inch">in</option>
+						<option value="kilogram">kg</option>
+						<option value="kilometer">km</option>
+						<option value="lb">lb</option>
+						<option value="mili gram">mg</option>
+						<option value="meter">m</option>
+						<option value="pcs">pcs</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Manufacturer </td>
+				<td>
+					<select>
+						<option hidden>Select or Add......</option>
+						<option ></option>
+					</select>
+					Brand 
+					<select>
+						<option hidden>Select or Add......</option>
+						<option ></option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Multiple Items?*</td>
+				<td>
+					<input type="checkbox" name="dec1" value="multipleItems"/>Create Attributes and Options
+				</td>
+			</tr>
+			<tr>
+				<td>Select your Item Type :</td>
+				<td>
+					<input type="radio" name="ItemType" value="inventory"/>Inventory
+					<input type="radio" name="ItemType" value="non-inventory"/>Non-Inventory
+				</td>
+			</tr>
+			<tr>
+			
+			</tr>
+
 
 
 	</body>
