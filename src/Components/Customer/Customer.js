@@ -1,0 +1,73 @@
+import React from 'react'
+
+function Customer() {
+    return (
+        <div>
+            <head>
+        <title>Customer</title>
+    </head>
+    <div><strong><h1>Customer</h1></strong></div>
+    <div>
+        <table>
+            <tr>
+                <td>Customer Type : </td>
+                <td>
+                    <input type="radio" name="custype" value="buissness"/>Business
+                    <input type="radio" name="custype" value="individual"/>Individual
+                </td>
+            </tr>
+            <tr>
+                <td>Primary Contact : </td>
+                <td>
+                    <select name="contact">
+                        <option hidden>Salutation</option>
+                        <option value="mr.">Mr.</option>
+                        <option value="mrs.">Mrs.</option>
+                        <option value="ms">Ms</option>
+                        <option value="miss.">Miss.</option>
+                        <option value="dr.">Dr.</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text" name="fname" placeholder="First Name" size="30"/>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <input type="text" name="lname" placeholder="Last Name" size="30"/>
+                </td>
+            </tr>
+            <tr>
+                <td>Company Name : </td>
+                <td>
+                    <input type="text" name="cname" />
+                </td>
+            </tr>
+            <tr>
+                <td color="red">Customers Display Name* :</td>
+                <td>
+                    <input type="text" name="cusDisplayName"/>
+                </td>
+            </tr>
+            <tr>
+                <td>Customer Email</td>
+                <td>
+                    <input type="text" name="email"/>
+                </td>
+            </tr>
+            <tr>
+                <td>Customer Phone No. :</td>
+                <td>
+                    <input type="number" name="custPhone1" placeholder="WORK PHONE"/>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <input type="number" name="custPhone2" placeholder="Mobile "/>
+                </td>
+            </tr>
+        </table>
+    </div>
+        </div>
+    )
+}
+
+export default Customer
